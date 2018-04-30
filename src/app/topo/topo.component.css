@@ -1,0 +1,39 @@
+/* barra de menu*/
+
+.img-logo {
+    position: relative;
+    height: 47px;
+}
+
+.navbar-dark {
+    background-color: #222222!important;
+    padding: 0;
+}
+
+.nav-logo {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.navbar-nav {
+    margin-right: 55%!important;
+}
+.navbar .collapse .nav-item a {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+}
+.navbar .collapse .nav-item :focus {
+    background-color: #bf0c0c;
+}
+.navbar .collapse .my-2 .fa-sign-in,
+.navbar .collapse .my-2 .fa-sign-in a  {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+
+}
+.navbar .collapse .my-2 .fa-sign-in a  {
+    font-family: 'Roboto', sans-serif!important;
+}

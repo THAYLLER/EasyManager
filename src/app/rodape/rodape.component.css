@@ -1,0 +1,9 @@
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+footer span.copyright {
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;
+}

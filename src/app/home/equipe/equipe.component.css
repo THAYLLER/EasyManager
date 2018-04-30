@@ -1,0 +1,79 @@
+.bg-light-gray {
+    background-color: #eeeeee;
+}
+
+section {
+    display: block;
+}
+@media (min-width: 768px){
+    section {
+        padding: 150px 0;
+    }
+    section {
+        padding: 100px 0;
+    }
+}
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+}
+.quemsomos {
+    width: 30%;
+    min-width: 150px;
+    float: left;
+}
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 18px;
+}
+.team-member p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.text-muted {
+    color: #777777;
+}
+ul.social-buttons {
+    margin-bottom: 0;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+ul.social-buttons li a {
+    display: block;
+    background-color: #222222;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}

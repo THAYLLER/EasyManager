@@ -1,0 +1,61 @@
+section#contact {
+    background-color: #222222;
+}
+section {
+    display: block;
+}
+@media (min-width: 768px){
+    section {
+        padding: 150px 0;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+section#contact .section-heading {
+    color: white;
+}
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section h3.section-subheading {
+    font-size: 16px;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+
+.text-muted {
+    color: #777777;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .text-danger {
+    color: #e74c3c;
+}
