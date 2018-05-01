@@ -32,7 +32,7 @@
     font-weight: 400;
     letter-spacing: 1px;
     color: white;
-
+    text-decoration: none;
 }
 .navbar .collapse .my-2 .fa-sign-in a  {
     font-family: 'Roboto', sans-serif!important;

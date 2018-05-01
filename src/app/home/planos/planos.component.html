@@ -7,32 +7,49 @@
         </div>
         <div class="container content">
             <div class="row">
-                <!-- Pricing -->
-                <div class="col-md-3">
+
+                <div class="col-md-3" *ngFor="let planos of planos">
                     <div class="pricing hover-effect">
                         <div class="pricing-head">
-                            <h3>AUTÔNOMO<span>
-                            Para controle financeiro de quem presta serviços sozinho </span>
-                            </h3>
-                            <h4><i>R$</i>18<i>.00</i>
+                            <span class="recommended-plan-ribbon" *ngIf="planos.maisUsado">Mais popular</span>
+                            <h3>{{ planos.titulo }}<span> {{ planos.descricao }} </span> </h3>
+                            <h4><i>R$</i> {{ planos.valor.toFixed(2) }}
                             <span>
                             Por mês </span>
                             </h4>
                         </div>
                         <ul class="pricing-content list-unstyled">
                             <li>
-                                <strong> 2 </strong> usuário
+                                <strong> {{ planos.qtdUsuarios == 9999 ? 'ilimitado' :  planos.qtdUsuarios}} </strong> usuário
                             </li>
                             <li>
-                                <del>Boletos</del>
+                                <ng-template [ngIf]="!planos.usaBoleto" [ngIfElse]="boletos">
+                                    <del >Boletos</del>
+                                </ng-template>
+                                
+                                <ng-template #boletos>
+                                        <strong>{{ planos.qtdBoleto == 9999 ? 'ilimitado' :  planos.qtdBoleto}}</strong> Boletos
+                                </ng-template>
                             </li>
                             <li>
-                                <del>NF de produtos</del>
+                                <ng-template [ngIf]="!planos.usaNfProd" [ngIfElse]="nfP">
+                                        <del>NF de produtos</del>
+                                </ng-template>
+                                
+                                <ng-template #nfP>
+                                        <strong>{{ planos.qtdNfProd == 9999 ? 'ilimitado' :  planos.qtdNfProd}}</strong> NF de Produtos
+                                </ng-template>
                             </li>
                             <li>
-                                <strong>10 </strong> NF de Serviço
+                                <ng-template [ngIf]="!planos.usaNfServ" [ngIfElse]="nfS">
+                                        <del>NF de Serviços</del>
+                                </ng-template>
+                                
+                                <ng-template #nfS>
+                                        <strong>{{ planos.qtdNfServ == 9999 ? 'ilimitado' :  planos.qtdNfServ}}</strong> NF de Serviço
+                                </ng-template>
                             </li>
-                            <li>
+                            <li *ngIf="planos.suporte">
                                 <strong>Suporte Grátis</strong>
                             </li>
                         </ul>
@@ -44,116 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="pricing hover-effect">
-                        <div class="pricing-head">
-                            <h3>MICRO EMPRESA <span>
-                            Notas fiscais e boletos, para sua empresa </span>
-                            </h3>
-                            <h4><i>R$</i>46<i>.34</i>
-                            <span>
-                            Por mês </span>
-                            </h4>
-                        </div>
-                        <ul class="pricing-content list-unstyled">
-                            <li>
-                                <strong> 4 </strong> usuário
-                            </li>
-                            <li>
-                                <strong>100</strong> Boletos
-                            </li>
-                            <li>
-                                <strong>60 </strong> NF de Produtos
-                            </li>
-                            <li>
-                                <strong>60 </strong> NF de Serviço
-                            </li>
-                            <li>
-                                <strong>Suporte Grátis</strong>
-                            </li>
-                        </ul>
-                        <div class="pricing-footer">
-                            
-                            <a href="cadastro.html" class="btn btn-lg btn-block btn-success">
-                            ASSINE AGORA
-                            </a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-md-3"> 
-                    <div class="pricing pricing-active hover-effect">
-                        <div class="pricing-head">
-                            <span class="recommended-plan-ribbon">Mais popular</span>
-                            <h3>PEQUENA  EMPRESA <span>
-                            Melhor opção para auxiliar a sua empresa </span>
-                            </h3>
-                            <h4><i>R$</i>99<i>.66</i>
-                            <span>
-                            Por mês </span>
-                            </h4>
-                        </div>
-                        <ul class="pricing-content list-unstyled">
-                            <li>
-                                <strong> 25 </strong> usuário
-                            </li>
-                            <li>
-                                <strong>3500</strong> Boletos
-                            </li>
-                            <li>
-                                <strong>2300 </strong> NF de Produtos
-                            </li>
-                            <li>
-                                <strong>2300 </strong> NF de Serviço
-                            </li>
-                            <li>
-                                <strong>Suporte Grátis</strong>
-                            </li>
-                        </ul>
-                        <div class="pricing-footer">
-                            
-                            <a href="cadastro.html" class="btn btn-lg btn-block btn-success">
-                            ASSINE AGORA
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pricing hover-effect">
-                        <div class="pricing-head">
-                            <h3 style="font-size: 20px!important;">MEDIA E GRANDE EMPRESA <span>
-                            Para empresas mais engajadas no mercado.</span>
-                            </h3>
-                            <h4><i>R$</i>199<i>.32</i>
-                            <span>
-                            Por mês </span>
-                            </h4>
-                        </div>
-                        <ul class="pricing-content list-unstyled">
-                            <li>
-                                <strong> Ilimitado </strong> usuário
-                            </li>
-                            <li>
-                                <strong>Ilimitado</strong> Boletos
-                            </li>
-                            <li>
-                                <strong>Ilimitado </strong> NF de Produtos
-                            </li>
-                            <li>
-                                <strong>Ilimitado </strong> NF de Serviço
-                            </li>
-                            <li>
-                                <strong>Suporte Grátis</strong>
-                            </li>
-                        </ul>
-                        <div class="pricing-footer">
-                            
-                            <a href="cadastro.html" class="btn btn-lg btn-block btn-success">
-                            ASSINE AGORA
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--//End Pricing -->
+                
             </div>
         </div>
     </div>
