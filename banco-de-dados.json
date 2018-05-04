@@ -46,7 +46,7 @@
 			"suporte": true
 		},
 		{
-			"id":1,
+			"id":4,
 			"titulo": "MEDIA E GRANDE EMPRESA",
 			"descricao": "Para empresas mais engajadas no mercado.",
 			"valor": 199.32,
@@ -59,6 +59,31 @@
 			"qtdNfServ": 9999,
 			"maisUsado": false,
 			"suporte": true
+		}
+	],
+	"admins": [
+		{
+			"id":1,
+			"nome": "Thayller Vilela Cintra",
+			"usuario": "admin",
+			"senha": "admin",
+			"foto": "thayller.jpg",
+			"status": 1,
+			"funcao": "CEO e Desenvolvedor",
+			"redesSociais": [
+				{
+					"link":"https://github.com/THAYLLER/",
+					"fa": "fa-github"
+				},
+				{
+					"link":"https://www.linkedin.com/in/thayller-vilela-15a41b57/",
+					"fa": "fa-linkedin"
+				},
+				{
+					"link": "https://www.facebook.com/thayllervilelacintra",
+					"fa": "fa-facebook"
+				}
+			]
 		}
 	]
 }

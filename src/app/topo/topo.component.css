@@ -1,30 +1,9 @@
-/* barra de menu*/
-
+.navbar-border {
+    border-bottom: 1px solid #6c757d;
+}
 .img-logo {
     position: relative;
     height: 47px;
-}
-
-.navbar-dark {
-    background-color: #222222!important;
-    padding: 0;
-}
-
-.nav-logo {
-    margin-left: 32px;
-    margin-right: 32px;
-}
-.navbar-nav {
-    margin-right: 55%!important;
-}
-.navbar .collapse .nav-item a {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: white;
-}
-.navbar .collapse .nav-item :focus {
-    background-color: #bf0c0c;
 }
 .navbar .collapse .my-2 .fa-sign-in,
 .navbar .collapse .my-2 .fa-sign-in a  {
@@ -36,4 +15,25 @@
 }
 .navbar .collapse .my-2 .fa-sign-in a  {
     font-family: 'Roboto', sans-serif!important;
+}
+@media (min-width: 768px){
+    .navbar-right {
+        float: right!important;
+        margin-left: 186px;
+        margin-right: 100px!important;
+    }
+}
+.navbar .container .collapse .navbar-nav .nav-item .btn {
+    margin-left: 10px;
+}
+.navbar .container .collapse .navbar-nav .nav-item .navbar-text-phone,
+.navbar .container .collapse .navbar-nav .nav-item .navbar-number-phone {
+    
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.navbar .container .collapse .navbar-nav .nav-top {
+    padding-top: 8px!important;
+    font-size: 16px;
 }

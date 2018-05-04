@@ -12,6 +12,8 @@ import { PlanosComponent } from './home/planos/planos.component';
 import { EquipeComponent } from './home/equipe/equipe.component';
 import { AdminUserComponent } from './admin-user/admin-user.component';
 import { AdminGeralComponent } from './admin-geral/admin-geral.component';
+import { TopoMenuComponent } from './topo-menu/topo-menu.component';
+import { RodapeMenuComponent } from './rodape-menu/rodape-menu.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { AdminGeralComponent } from './admin-geral/admin-geral.component';
     PlanosComponent,
     EquipeComponent,
     AdminUserComponent,
-    AdminGeralComponent
+    AdminGeralComponent,
+    TopoMenuComponent,
+    RodapeMenuComponent
   ],
   imports: [
     BrowserModule,

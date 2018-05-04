@@ -6,18 +6,19 @@
           </div>
       </div>
       <div class="row">
-          <div class="col-sm-4">
-              <div class="team-member">
+          <div class="col-sm-4" *ngFor="let equipe of equipe">
+              <div class="team-member" *ngIf="equipe.status">
                 
-                  <img src="../../../assets/imgs/equipe/thayller.jpg" alt="" class="rounded-responsive rounded-circle quemsomos">
+                  <img src="../../../assets/imgs/equipe/{{ equipe.foto }}" alt="" class="rounded-responsive rounded-circle quemsomos">
                   <h4>Thayller Vilela Cintra</h4>
-                  <p class="text-muted">Fundador e Desenvolvedor</p>
+                  <p class="text-muted">{{equipe.funcao}}</p>
+                  
                   <ul class="list-inline social-buttons">
-                      <li><a href="https://github.com/THAYLLER/"><i class="fa fa-github"></i></a>
+                      <li><a [href]="equipe.redesSociais[0].link"><i class="fa {{equipe.redesSociais[0].fa}}"></i></a>
                       </li>
-                      <li><a href="https://www.facebook.com/thayllervilelacintra"><i class="fa fa-facebook"></i></a>
+                      <li><a [href]="equipe.redesSociais[1].link"><i class="fa {{equipe.redesSociais[1].fa}}"></i></a>
                       </li>
-                      <li><a href="https://www.linkedin.com/in/thayller-vilela-15a41b57/"><i class="fa fa-linkedin"></i></a>
+                      <li><a [href]="equipe.redesSociais[2].link"><i class="fa {{equipe.redesSociais[2].fa}}"></i></a>
                       </li>
                   </ul>
               </div>

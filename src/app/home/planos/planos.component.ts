@@ -16,9 +16,14 @@ export class PlanosComponent implements OnInit {
   constructor(private planosService: PlanosService) { }
 
   ngOnInit() {
-   this.planos = this.planosService.getPlanos();
-
-   console.log(this.planos);
+    
+    this.planosService.getPlanos()
+      .then((planos: Planos[]) => {
+        this.planos = planos
+      })
+      .catch((param: any) => {
+        console.log(param);
+      })
   }
 
 }

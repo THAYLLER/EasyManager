@@ -1,9 +1,22 @@
 footer {
-    padding: 25px 0;
     text-align: center;
 }
 footer span.copyright {
     line-height: 40px;
     text-transform: uppercase;
     text-transform: none;
+}
+#top {
+    color: #fff;
+    background: #841b1b;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    position: fixed;
+    border-radius: 3px;
+    text-align: center;
+    bottom: 10px;
 }

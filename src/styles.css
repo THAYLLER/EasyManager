@@ -1,52 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
-
-body,nav,head,section {
+.index {
     font-family: 'Roboto', sans-serif!important;
 }
 .btn-xl {
-    color: white;
-    background-color: #bf0c0c;
-    border-color: #bf0c0c;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 3px;
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-  .btn-xl:hover,
-  .btn-xl:focus,
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
-    color: white;
-    background-color: #bf0c0c;
-    border-color: #bf0c0c;
-  }
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
-    background-image: none;
-  }
-  .btn-xl.disabled,
-  .btn-xl[disabled],
-  fieldset[disabled] .btn-xl,
-  .btn-xl.disabled:hover,
-  .btn-xl[disabled]:hover,
-  fieldset[disabled] .btn-xl:hover,
-  .btn-xl.disabled:focus,
-  .btn-xl[disabled]:focus,
-  fieldset[disabled] .btn-xl:focus,
-  .btn-xl.disabled:active,
-  .btn-xl[disabled]:active,
-  fieldset[disabled] .btn-xl:active,
-  .btn-xl.disabled.active,
-  .btn-xl[disabled].active,
-  fieldset[disabled] .btn-xl.active {
-    background-color: #bf0c0c;
-    border-color: #bf0c0c;
-  }
-  .btn-xl .badge {
-    color: #bf0c0c;
-    background-color: white;
-  }
+  color: white;
+  background-color: #bf0c0c;
+  border-color: #bf0c0c;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: white;
+  background-color: #bf0c0c;
+  border-color: #bf0c0c;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #bf0c0c;
+  border-color: #bf0c0c;
+}
+.btn-xl .badge {
+  color: #bf0c0c;
+  background-color: white;
+}
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+  position: relative;
+}
+.navbar-dark {
+  background-color: #841b1b!important;
+  padding: 0;
+}
